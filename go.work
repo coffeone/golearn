@@ -1,6 +1,9 @@
 go 1.21.6
 
 use (
+	./const
 	./helloworld
+	./loop
+	./return
 	./zoo
 )
