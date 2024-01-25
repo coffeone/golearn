@@ -25,11 +25,37 @@ import "fmt"
 // 	fmt.Println(s1)
 // }
 
-func main() {
-	s := []string{"apple", "banana", "cherry"}
+// func main() {
+// 	s := []string{"apple", "banana", "cherry"}
 
-	for i, v := range s {
-		fmt.Printf("[%d]=> %s\n", i, v)
+// 	for i, v := range s {
+// 		fmt.Printf("[%d]=> %s\n", i, v)
+// 	}
+
+// }
+
+//スライスを使わないとき
+// func pow(a [3]int) {
+// 	for i, v := range a {
+// 		a[i] = v * v
+// 	}
+// 	return
+// }
+// func main() {
+// 	a := [3]int{1, 2, 3}
+// 	pow(a)
+// 	fmt.Println(a)
+// }
+
+// スライスを使う時
+func pow(a []int) {
+	for i, v := range a {
+		a[i] = v * v
 	}
-
+	return
+}
+func main() {
+	a := []int{1, 2, 3}
+	pow(a)
+	fmt.Println(a)
 }
