@@ -2,8 +2,11 @@ go 1.21.6
 
 use (
 	./const
+	./foo
 	./helloworld
 	./loop
+	./os
+
 	./return
 	./struct4
 	./zoo
